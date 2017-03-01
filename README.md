@@ -4,5 +4,6 @@
 ### This is happening for two possible reasons:
 * The site has to protect its data, Google maps will not allow you to request too many results too quickly
 * Making many repeated requests to a website's server may use up bandwidth, slowing down the website and potentially overloading the server.
+
 ### You need to be familiar with the basics of HTML
 
