@@ -13,3 +13,10 @@ Some websites explicity forbid users from scraping their data with automated too
 * [Incase you are not familiar](https://www.sitepoint.com/web-foundations/basic-structure-of-a-web-page/)
 * [Webpage we grab HTML](https://realpython.com/practice/aphrodite.html)
 * [The script](scrapeScript.py)
+
+# Scrape specific information from webpage
+
+We can scrape specific information from the webpage using text parsing. For instance, if we wanted to get the title of the webpage, we could use the string find() method to seatch through the text of the HTML for the title tags and parse out the actual title.
+
+* [Scrape specific information script](scrapeScript2.py) 
+
