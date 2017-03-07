@@ -20,3 +20,16 @@ We can scrape specific information from the webpage using text parsing. For inst
 
 * [Scrape specific information script](scrapeScript2.py) 
 
+# Scrape specific table from webpage
+
+We can scrape specific table from the webpage using beautiful soup 4-- Joe Help me plzz!!
+
+here is the file
+
+* [Scrape specific table from webpage](scrape_table.py)
+
+# Scrape multiple tags from webpage
+
+We can scrape multiple tags from a web page using bs4 --- Joe help again plz!!!
+
+* [Scrape multiple tags from webpage](scrape_multiple_tags.py)
