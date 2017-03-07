@@ -42,7 +42,7 @@ For example, try to run the previous scripts by changing the address
 ```python
 my_address = "https://realpython.com/practice/poseidon.html"
 ```
-Because the tag is <title > and not <title> our find() method returned -1 (because the exact string <title> wasn't found anywhere)
+Because the tag is \<title > and not \<title> our find() method returned -1 (because the exact string \<title> wasn't found anywhere)
 
 
 # Scrape specific table from webpage
