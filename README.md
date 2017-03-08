@@ -186,7 +186,7 @@ That said, people can (and do) succesfully scrape data from HTML tables. You hav
 
 As with any other web scraping script the steps to write a script that scrapes a HTML table are:
 
-..1. Get the raw source of the HTML page that contains your table. You can use two Python libraries for this purpose: `urllib` and `requests`. You can use either to get a blob of unstructured text from a HTML page, including meta data, tags and JavaScript functions.
+* Get the raw source of the HTML page that contains your table. You can use two Python libraries for this purpose: `urllib` and `requests`. You can use either to get a blob of unstructured text from a HTML page, including meta data, tags and JavaScript functions.
 
 ```
 from urllib.request import urlopen
