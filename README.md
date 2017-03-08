@@ -70,9 +70,9 @@ Scraping HTML tables can be difficult for various reasons:
 
 The `table` tag has three child levels:
 
- * `<tr>` (table rows) elements. Each table has a series of row elements.
- * `<th>` (table headers) or `<td>` (table data) elements. Each row in turn has a series of `<th>` and `<tr>` elements.
- * The actual table data (`Alice`, `24`, `Bob`, `26`). This is the actual table data that you want to 'scrape', or transform into a Python list.
+    * `<tr>` (table rows) elements. Each table has a series of row elements.
+    * `<th>` (table headers) or `<td>` (table data) elements. Each row in turn has a series of `<th>` and `<tr>` elements.
+    * The actual table data (`Alice`, `24`, `Bob`, `26`). This is the actual table data that you want to 'scrape', or transform into a Python list.
 
 
 * Table headers are optional. For example, this is also a valid HTML table:
