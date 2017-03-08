@@ -70,9 +70,9 @@ Scraping HTML tables can be difficult for various reasons:
 
 The `table` tag has three child levels:
 
-..1. `<tr>` (table rows) elements. Each table has a series of row elements.
-..2. `<th>` (table headers) or `<td>` (table data) elements. Each row in turn has a series of `<th>` and `<tr>` elements.
-..3. The actual table data (`Alice`, `24`, `Bob`, `26`). This is the actual table data that you want to 'scrape', or transform into a Python list.
+ * `<tr>` (table rows) elements. Each table has a series of row elements.
+ * `<th>` (table headers) or `<td>` (table data) elements. Each row in turn has a series of `<th>` and `<tr>` elements.
+ * The actual table data (`Alice`, `24`, `Bob`, `26`). This is the actual table data that you want to 'scrape', or transform into a Python list.
 
 
 * Table headers are optional. For example, this is also a valid HTML table:
@@ -201,11 +201,11 @@ url = 'https://pypi.python.org/pypi'
 request = requests.get(url)
 source = request.text
 ```
-..2. Convert the page source into something you can traverse and extract the data you need. The most commonly used Python libraries are `BeautifulSoup` and `lxml`. 
+* Convert the page source into something you can traverse and extract the data you need. The most commonly used Python libraries are `BeautifulSoup` and `lxml`. 
 ```
 soup = BeautifulSoup(source, 'html.parser')
 ```
-..3. Access the table and extract its data. In BeautifulSoup you do this using its find_all() method.
+* Access the table and extract its data. In BeautifulSoup you do this using its find_all() method.
 ```
 ...
 tables = soup.find_all('table')
@@ -215,7 +215,7 @@ for row in table.find_all('tr'):
     cells = row.find_all('td')
 ...
 ```
-..4. Print the data or convert it to a relevant Python data structure.
+* Print the data or convert it to a relevant Python data structure.
 
 Here is a small example that uses `requests` and `beautifulSoup` to get the list of recently updated Python packages from the PyPI front page:
 
