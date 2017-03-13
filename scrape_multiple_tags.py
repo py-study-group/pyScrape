@@ -14,7 +14,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-# Returns a list of all <a> tag 
+# Returns a list of all <a> tag
 # values as a list
 def get_anchor_values(url):
 
@@ -29,7 +29,7 @@ def get_anchor_values(url):
     anchors = soup.findAll('a')
 
     ret_list = []
-    
+
     # Each anchor is a Tag object
     # https://www.crummy.com/software/BeautifulSoup/bs4/doc/#tag
     for anchor in anchors:
@@ -48,6 +48,5 @@ def main():
         print(val)
 
 
-if __name__ ==  '__main__':
+if __name__ == '__main__':
     main()
-    
