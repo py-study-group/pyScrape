@@ -36,7 +36,7 @@ def get_table(url, index):
         if 0 <= index <= len(tables) - 1:
             table = tables[index]
 
-    if not table is None:
+    if table is not None:
         for row in table.find_all('tr'):
             cell_list = list()
             cells = row.find_all('td')
@@ -49,7 +49,7 @@ def get_table(url, index):
                 cell_list.append(unidecode(anchor.contents[0]))
                 cell_list.append(cells[2].contents[0])
             ret_value.append(cell_list)
-    
+
     return ret_value
 
 
@@ -58,11 +58,10 @@ def main():
     url = 'https://pypi.python.org/pypi'
     table = get_table(url, 0)
 
-    if not table is None:
+    if table is not None:
         for row in table:
             print(row)
 
 
-if __name__ ==  '__main__':
+if __name__ == '__main__':
     main()
-    
