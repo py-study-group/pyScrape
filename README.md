@@ -226,3 +226,37 @@ Here is a small example that uses `requests` and `beautifulSoup` to get the list
 We can scrape multiple tags from a web page using bs4 --- Joe help again plz!!!
 
 * [Scrape multiple tags from webpage](scrape_multiple_tags.py)
+
+## Narrow down tag searches
+
+We can use a tag's html attributes or css classes to narrow down our searches.
+This saves us from sifting through multiple matches manually by making much more
+specific searches.
+
+* [Scrape tags based on attributes or classes](scrape_attributes.py)
+
+bs4.find_all can take tags and attributes to match elements with specific tags.
+
+This matches only red headers:
+```
+soup.find_all('h1', color='red'
+--- or ---
+soup.find_all('h1', {'color': 'red'})
+```
+bs4 can also take only attribute arguments to make matches regardless of tag.
+
+This matches all red text on a page, regardless if it is a header or paragraph:
+```
+soup.find_all(color='red')
+--- or ---
+soup.find_all(attrs={'color':'red'})
+```
+As you can see, we can supply attributes to find_all either as a dictionary or
+keyword arguments. If supplying a class as a keyword argument it must have a 
+trailing underscore:
+```
+soup.find_all(class_='p-class')
+--- or ---
+soup.find_all(attrs={'class': 'p-class'}
+```
+
